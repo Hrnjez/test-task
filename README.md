@@ -6,5 +6,5 @@ Fetching and displaying  GitHub API.
 2. `npm install` to install node_modules
 3. `npm start` to start the app
 
-### `npm start`
+
 
