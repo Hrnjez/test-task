@@ -1,0 +1,300 @@
+.header {
+  width: 100%;
+  background: #0f7e53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.header .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin: 1.5rem 0;
+}
+
+.header form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 2rem;
+  text-align: center;
+}
+
+.header form input {
+  background: rgba(251, 251, 251, 0.3);
+  height: 1.5rem;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  padding: 0 0.5rem;
+}
+
+.header form input:focus {
+  outline: none;
+}
+
+.header form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.header form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.header form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.header form input::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid #7c7c7c49;
+  padding: 1rem;
+}
+
+.main .users {
+  height: 67vh;
+  overflow: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main .users .user {
+  border: 1px solid #7c7c7c49;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  max-height: 122px;
+}
+
+.main .users .user img {
+  width: 100px;
+  margin: 0.5rem;
+  border: 3px solid #0f7e53;
+  border-radius: 100px;
+}
+
+.main .users .user .content {
+  padding: 0 0.5rem;
+  border-left: 3px solid #0f7e5377;
+}
+
+.main .users .user .content h2 {
+  color: #0f7e53;
+  font-size: 18px;
+}
+
+.main .users .user .content h2 span {
+  font-size: 12px;
+  color: grey;
+}
+
+.main .users .user .content p {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3em;
+  line-height: 1.5em;
+  padding-right: 1rem;
+  color: grey;
+}
+
+.main .users .user:hover {
+  -webkit-box-shadow: 1px 2px 5px grey;
+          box-shadow: 1px 2px 5px grey;
+  cursor: pointer;
+}
+
+.main .repositories {
+  padding: 1rem;
+  padding-top: 0;
+  height: 60vh;
+  overflow: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main .repositories .repo {
+  border: 1px solid #0f7e5344;
+  margin: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 4fr 2fr;
+      grid-template-rows: 3fr 4fr 2fr;
+  text-align: center;
+}
+
+.main .repositories .repo div {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main .repositories .repo div .desc {
+  height: 60px;
+}
+
+.main .repositories .repo div p {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.9em;
+  line-height: 1.3em;
+  padding-right: 1rem;
+  color: #0f7e53;
+  font-weight: 600;
+  text-align: start;
+  width: 85%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.main .repositories .repo div p span {
+  color: grey;
+}
+
+.main .repositories .repo div p:first-child {
+  padding-top: 1rem;
+}
+
+.main .repositories .repo h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-top: 2px solid #0f7e5388;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+  text-align: start;
+  color: #0f7e53;
+  font-size: 24px;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  width: 85%;
+  background: #0f7e5322;
+  text-transform: capitalize;
+}
+
+.main .repositories .repo h4 .top-heading {
+  font-size: 12px;
+  color: #303131;
+  font-weight: 200;
+}
+
+.main .repositories .repo a {
+  text-decoration: none;
+  color: #fff;
+  background: #0f7e53;
+  padding: 0.5rem 2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.main .repositories .repo a i {
+  font-size: 14px;
+}
+
+.main .repositories .repo a:hover {
+  cursor: pointer;
+  background: #0f7e53c2;
+}
+
+.main .repositories .repo .repo-info {
+  float: right;
+  width: 50%;
+  margin: auto;
+}
+
+.main .repositories .repo .repo-info .repo-counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.main .repositories .repo .repo-info .repo-counts p {
+  text-align: center;
+  padding-right: 0;
+  color: grey;
+}
+
+.main .repositories .repo .repo-info .repo-counts p i {
+  margin-right: 0.5rem;
+  color: #0f7e53;
+}
+
+.main .top-info {
+  margin: auto;
+  text-align: start;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.main .top-info .btn {
+  text-decoration: none;
+  color: #fff;
+  background: #0f7e53;
+  padding: 0.5rem 2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  text-align: center;
+}
+
+.main .top-info .btn:hover {
+  cursor: pointer;
+  background: #0f7e53c2;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  color: grey;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f7e53;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f7e5399;
+}
+/*# sourceMappingURL=App.css.map */
